@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SimpleGuard } from '@delon/auth';
 import { environment } from '@env/environment';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 // layout
 import { LayoutDefaultComponent } from '../layout/default/default.component';
 import { LayoutFullScreenComponent } from '../layout/fullscreen/fullscreen.component';
@@ -56,6 +57,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    NzBreadCrumbModule,
     RouterModule.forRoot(routes, {
       useHash: environment.useHash,
       // NOTICE: If you use `reuse-tab` component and turn on keepingScroll you can set to `disabled`
@@ -63,6 +65,6 @@ const routes: Routes = [
       scrollPositionRestoration: 'top',
     }),
   ],
-  exports: [RouterModule],
+  exports: [NzBreadCrumbModule, RouterModule],
 })
 export class RouteRoutingModule {}

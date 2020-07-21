@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '@shared';
 import { RouteRoutingModule } from './routes-routing.module';
 // dashboard pages
+import { CustomPageComponent } from './custom-page/custom-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 // passport pages
 import { UserLoginComponent } from './passport/login/login.component';
@@ -14,6 +15,7 @@ import { UserLockComponent } from './passport/lock/lock.component';
 
 const COMPONENTS = [
   DashboardComponent,
+  CustomPageComponent,
   // passport pages
   UserLoginComponent,
   UserRegisterComponent,
