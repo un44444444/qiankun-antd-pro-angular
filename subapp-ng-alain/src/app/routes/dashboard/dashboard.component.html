@@ -1,1 +1,9 @@
-<page-header></page-header>
+<page-header [content]="content">
+  <ng-template #content>
+    <div>this is content in page-header</div>
+  </ng-template>
+</page-header>
+<div>
+  <span>this is Dashboard Page.</span>
+  Go to <a routerLink="/custom-page" routerLinkActive="active">Custom Page</a>
+</div>

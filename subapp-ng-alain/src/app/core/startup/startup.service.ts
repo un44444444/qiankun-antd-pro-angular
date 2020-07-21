@@ -97,6 +97,11 @@ export class StartupService {
             icon: { type: 'icon', value: 'appstore' },
           },
           {
+            text: 'Custom Page',
+            link: '/custom-page',
+            icon: { type: 'icon', value: 'hdd' },
+          },
+          {
             text: 'Quick Menu',
             icon: { type: 'icon', value: 'rocket' },
             shortcutRoot: true,

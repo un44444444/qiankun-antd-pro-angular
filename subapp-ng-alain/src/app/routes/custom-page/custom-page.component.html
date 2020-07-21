@@ -1,0 +1,16 @@
+<page-header [title]="'单号：234231029431'" [breadcrumb]="breadcrumb" [content]="content">
+  <ng-template #breadcrumb>
+    <nz-breadcrumb>
+      <nz-breadcrumb-item><a>一级菜单</a></nz-breadcrumb-item>
+      <nz-breadcrumb-item><a>二级菜单</a></nz-breadcrumb-item>
+      <nz-breadcrumb-item><a>三级菜单</a></nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </ng-template>
+  <ng-template #content>
+    <div>this is content in page-header</div>
+  </ng-template>
+</page-header>
+<div>
+  <span>this is Custom Page.</span>
+  Go to <a routerLink="/dashboard">Dashboard Page</a>
+</div>
