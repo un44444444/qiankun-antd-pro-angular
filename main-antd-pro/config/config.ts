@@ -44,4 +44,21 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
+  // 配置 qiankuan
+  qiankun: {
+    master: {
+      // 注册子应用信息
+      apps: [
+        {
+          name: 'app-esl', // 唯一 id
+          entry: '//test.sifei.info/app-esl/', // html entry
+        },
+        {
+          name: 'app-angular', // 唯一 id
+          entry: '//localhost:7103/', // html entry
+          activeRule: '/angular9',
+        },
+      ],
+    },
+  },
 });

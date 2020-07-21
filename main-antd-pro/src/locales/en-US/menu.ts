@@ -49,4 +49,9 @@ export default {
   'menu.editor.flow': 'Flow Editor',
   'menu.editor.mind': 'Mind Editor',
   'menu.editor.koni': 'Koni Editor',
+
+  'menu.subapp1': 'Sub App1',
+  'menu.subapp1.page1': 'App1 Page1',
+  'menu.subapp1.page2': 'App1 Page2',
+  'menu.subapp2': 'Sub App2',
 };
