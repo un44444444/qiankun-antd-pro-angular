@@ -54,9 +54,10 @@ export default defineConfig({
           entry: '//test.sifei.info/app-esl/', // html entry
         },
         {
-          name: 'app-angular', // 唯一 id
-          entry: '//localhost:7103/', // html entry
-          activeRule: '/angular9',
+          name: 'ng-alain', // 唯一 id
+          // entry: '//localhost:7106/', // html entry
+          entry: '//test.sifei.info/subapp-ng-alain/', // html entry
+          activeRule: '/subapp-ng-alain',
         },
       ],
     },

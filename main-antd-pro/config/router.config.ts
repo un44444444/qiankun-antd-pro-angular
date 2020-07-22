@@ -64,8 +64,8 @@ const Router = [
   {
     name: 'subapp2',
     icon: 'gift',
-    path: '/angular9',
-    microApp: 'app-angular',
+    path: '/subapp-ng-alain',
+    microApp: 'ng-alain',
   },
 
   {
