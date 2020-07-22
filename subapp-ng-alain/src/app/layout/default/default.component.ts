@@ -30,6 +30,7 @@ export class LayoutDefaultComponent implements OnInit, AfterViewInit, OnDestroy 
   @ViewChild('settingHost', { read: ViewContainerRef, static: true })
   private settingHost: ViewContainerRef;
   isFetching = false;
+  isInQiankun = false;
 
   constructor(
     router: Router,
@@ -89,6 +90,12 @@ export class LayoutDefaultComponent implements OnInit, AfterViewInit, OnDestroy 
     const { settings, unsubscribe$ } = this;
     settings.notify.pipe(takeUntil(unsubscribe$)).subscribe(() => this.setClass());
     this.setClass();
+    // for qiankun
+    if ((window as any).__POWERED_BY_QIANKUN__) {
+      this.isInQiankun = true;
+    } else if (this.isInQiankun) {
+      this.isInQiankun = false;
+    }
   }
 
   ngOnDestroy() {
