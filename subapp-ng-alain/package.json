@@ -17,8 +17,8 @@
     "pretty-quick": "pretty-quick",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "hmr": "ng serve -c=hmr",
-    "build:qiankun": "ng build --prod --deploy-url http://localhost:7103/",
-    "serve:qiankun": "ng serve --disable-host-check --port 7103 --base-href /angular9 --live-reload false"
+    "build:qiankun": "ng build --prod --base-href /subapp-ng-alain --deploy-url /subapp-ng-alain/",
+    "serve:qiankun": "ng serve --disable-host-check --port 7106 --base-href /subapp-ng-alain --live-reload false"
   },
   "private": true,
   "dependencies": {
