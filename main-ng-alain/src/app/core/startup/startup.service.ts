@@ -97,7 +97,13 @@ export class StartupService {
             icon: { type: 'icon', value: 'appstore' },
           },
           {
-            text: 'Quick Menu',
+            text: 'Sub APP1',
+            link: '/app-esl/list',
+            icon: { type: 'icon', value: 'appstore' },
+          },
+          {
+            text: 'Sub APP2',
+            link: '/subapp-ng-alain',
             icon: { type: 'icon', value: 'rocket' },
             shortcutRoot: true,
           },

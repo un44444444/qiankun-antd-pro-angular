@@ -8,6 +8,7 @@ import { LayoutFullScreenComponent } from '../layout/fullscreen/fullscreen.compo
 import { LayoutPassportComponent } from '../layout/passport/passport.component';
 // dashboard pages
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { EmptyComponent } from './dashboard/empty.component';
 // passport pages
 import { UserLoginComponent } from './passport/login/login.component';
 import { UserRegisterComponent } from './passport/register/register.component';
@@ -22,9 +23,9 @@ const routes: Routes = [
     component: LayoutDefaultComponent,
     canActivate: [SimpleGuard],
     children: [
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: '', redirectTo: 'EmptyComponent', pathMatch: 'full' },
       { path: 'dashboard', component: DashboardComponent, data: { title: '仪表盘', titleI18n: 'dashboard' } },
-      { path: 'exception', loadChildren: () => import('./exception/exception.module').then((m) => m.ExceptionModule) },
+      // { path: 'exception', loadChildren: () => import('./exception/exception.module').then((m) => m.ExceptionModule) },
       // 业务子模块
       // { path: 'widgets', loadChildren: () => import('./widgets/widgets.module').then(m => m.WidgetsModule) },
     ],
@@ -49,7 +50,7 @@ const routes: Routes = [
   },
   // 单页不包裹Layout
   { path: 'callback/:type', component: CallbackComponent },
-  { path: '**', redirectTo: 'exception/404' },
+  { path: '**', component: EmptyComponent },
 ];
 
 @NgModule({
