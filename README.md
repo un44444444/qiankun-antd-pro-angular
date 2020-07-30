@@ -3,11 +3,12 @@
 
 # 概述
 ## main-antd-pro
-main-antd-pro是基于[Ant Design Pro](https://pro.ant.design/)项目改造而来的qiankun基座。
+main-antd-pro是基于[Ant Design Pro](https://pro.ant.design/)项目改造而来的qiankun主应用基座。
 * 执行以下命令，可运行工程查看效果：
  > cd main-antd-pro  
  > yarn install  
  > yarn start
+* 点击可前往到[主应用线上预览地址](http://test.sifei.info/)
 * 目前还存在路由问题尚未解决
 
 ## subapp-ng-alain
@@ -16,6 +17,7 @@ subapp-ng-alain是基于[NG-ALAIN](https://ng-alain.com/zh)项目改造而来的
  > cd subapp-ng-alain  
  > yarn install  
  > yarn serve:qiankun
+* 点击可前往到[子应用线上预览地址](http://test.sifei.info/subapp-ng-alain/)
 
 # 从零开始：改造qiankun基座以及子应用
 ## 改造Ant Design Pro项目为qiankun基座
